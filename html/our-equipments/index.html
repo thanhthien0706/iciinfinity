@@ -5,17 +5,17 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>主要設備 | 興盛ネクサス株式会社</title>
 <link rel="icon" type="image/png" href="/images/favicon.png">
-<meta name="description" content="興盛ネクサスの主要設備。FANUC高速マシニングセンタ「ロボドリル」、彫刻機、サンドブラスト、精密測定器一式、日越パートナー網による溶接・板金の大型設備群をご紹介します。">
+<meta name="description" content="興盛ネクサスの主要設備。Mazak製マシニングセンタ、豊富な工具在庫、TIG溶接機、ラジアルボール盤、治具用中ぐり盤、卓上ボール盤、フォークリフト、エアコンプレッサーなど、実際の自社設備を写真でご紹介します。">
 <link rel="canonical" href="https://koseinexus.com/our-equipments/">
 <meta property="og:site_name" content="興盛ネクサス株式会社">
 <meta property="og:locale" content="ja_JP">
 <meta property="og:type" content="website">
 <meta property="og:title" content="主要設備 | 興盛ネクサス株式会社">
-<meta property="og:description" content="興盛ネクサスの主要設備。FANUC高速マシニングセンタ「ロボドリル」、彫刻機、サンドブラスト、精密測定器一式、日越パートナー網による溶接・板金の大型設備群をご紹介します。">
+<meta property="og:description" content="興盛ネクサスの主要設備。Mazak製マシニングセンタ、豊富な工具在庫、TIG溶接機、ラジアルボール盤、治具用中ぐり盤、卓上ボール盤、フォークリフト、エアコンプレッサーなど、実際の自社設備を写真でご紹介します。">
 <meta property="og:url" content="https://koseinexus.com/our-equipments/">
 <meta property="og:image" content="https://koseinexus.com/images/banner.jpeg">
 <meta name="twitter:card" content="summary_large_image">
-<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","name":"主要設備","url":"https://koseinexus.com/our-equipments/","inLanguage":"ja"},{"@type":"ItemList","itemListElement":[{"@type":"ListItem","position":1,"name":"高速マシニングセンタ ロボドリル α-T14iD"},{"@type":"ListItem","position":2,"name":"彫刻機"},{"@type":"ListItem","position":3,"name":"サンドブラスト設備"},{"@type":"ListItem","position":4,"name":"精密測定器一式"},{"@type":"ListItem","position":5,"name":"溶接・板金の大型設備群（パートナー網）"}]},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"ホーム","item":"https://koseinexus.com/"},{"@type":"ListItem","position":2,"name":"主要設備","item":"https://koseinexus.com/our-equipments/"}]}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","name":"主要設備","url":"https://koseinexus.com/our-equipments/","inLanguage":"ja"},{"@type":"ItemList","itemListElement":[{"@type":"ListItem","position":1,"name":"立形マシニングセンタ Mazak NEXUS 510C"},{"@type":"ListItem","position":2,"name":"彫刻機"},{"@type":"ListItem","position":3,"name":"サンドブラスト設備"},{"@type":"ListItem","position":4,"name":"工具・エンドミル保管庫"},{"@type":"ListItem","position":5,"name":"TIG溶接機"},{"@type":"ListItem","position":6,"name":"ラジアルボール盤"},{"@type":"ListItem","position":7,"name":"治具用中ぐり盤"},{"@type":"ListItem","position":8,"name":"卓上ボール盤"},{"@type":"ListItem","position":9,"name":"フォークリフトによる構内搬送"},{"@type":"ListItem","position":10,"name":"オイルフリーエアコンプレッサー"}]},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"ホーム","item":"https://koseinexus.com/"},{"@type":"ListItem","position":2,"name":"主要設備","item":"https://koseinexus.com/our-equipments/"}]}]}</script>
 <style>
   :root {
     --primary: #1b62b5;
@@ -1411,6 +1411,105 @@
     }
   }
 
+  /* ===== Tool gallery (real workshop snapshots) ===== */
+  .tool-gallery {
+    border-top: 1px solid #e2e6ea;
+    padding-top: 72px;
+  }
+
+  .tool-gallery__intro {
+    font-size: 14.5px;
+    color: #555;
+    line-height: 1.9;
+    margin-bottom: 36px;
+    max-width: 760px;
+  }
+
+  .tool-gallery__grid {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 12px;
+  }
+
+  .tool-gallery__item {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    background: #dde1e5;
+    cursor: zoom-in;
+  }
+
+  .tool-gallery__item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform .3s ease;
+  }
+
+  .tool-gallery__item:hover img {
+    transform: scale(1.08);
+  }
+
+  .tool-gallery__lightbox {
+    position: fixed;
+    inset: 0;
+    z-index: 4000;
+    background: rgba(8, 16, 28, .9);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+  }
+
+  .tool-gallery__lightbox.is-open {
+    display: flex;
+  }
+
+  .tool-gallery__lightbox img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, .5);
+  }
+
+  .tool-gallery__lightbox-close {
+    position: absolute;
+    top: 24px;
+    right: 28px;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, .12);
+    color: #fff;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .tool-gallery__lightbox-close:hover {
+    background: rgba(255, 255, 255, .22);
+  }
+
+  @media (max-width: 1100px) {
+    .tool-gallery {
+      padding-top: 44px;
+    }
+
+    .tool-gallery__grid {
+      grid-template-columns: repeat(4, 1fr);
+      gap: 8px;
+    }
+  }
+
+  @media (max-width: 640px) {
+    .tool-gallery__grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
   /* alternate direction: text | num | image */
   .equip-row--rev .equip-row__media {
     order: 3;
@@ -1711,11 +1810,11 @@
 <section class="section" id="equipment-list">
   <div class="section__inner">
       <div class="equip-row">
-        <figure class="equip-row__media"><img src="/images/equipment-1.jpeg" alt="高速マシニングセンタ ロボドリル α-T14iD" loading="lazy"></figure>
+        <figure class="equip-row__media"><img src="/images/products/1791165555248_6329746260524595665_6329746260524595665_a538f886a52c80f5945b346f2197fe7d.jpg" alt="立形マシニングセンタ Mazak NEXUS 510C" loading="lazy"></figure>
         <div class="equip-row__num" aria-hidden="true">01</div>
         <div class="equip-row__body">
-          <p class="maker">FANUC（日本）</p>
-          <h3>高速マシニングセンタ<br>ロボドリル α-T14iD</h3>
+          <p class="maker">Mazak（日本）</p>
+          <h3>立形マシニングセンタ<br>NEXUS 510C</h3>
           <p>3D高速フライス加工の主力機。アルミ・樹脂・鉄・鋼・ステンレスの複雑形状を高速で削り出し、ツールマークのない最高レベルの面品位を実現します。</p>
         </div>
       </div>
@@ -1738,28 +1837,149 @@
         </div>
       </div>
       <div class="equip-row equip-row--rev">
-        <figure class="equip-row__media"><img src="/images/equipment-4.jpeg" alt="精密測定器一式" loading="lazy"></figure>
+        <figure class="equip-row__media"><img src="/images/products/1791165544282_6329746260524595665_6329746260524595665_fb61d230009cd28dada5bf60f370307d.jpg" alt="工具・エンドミル保管庫" loading="lazy"></figure>
         <div class="equip-row__num" aria-hidden="true">04</div>
         <div class="equip-row__body">
-          <p class="maker">品質保証</p>
-          <h3>精密測定器一式</h3>
-          <p>ノギス・マイクロメータ・ハイトゲージ・ダイヤルゲージに加え、ピンゲージ・ブロックゲージを完備。工程内検査と治具組立の平面・平行出しを支えます。</p>
+          <p class="maker">工具管理</p>
+          <h3>工具・エンドミル保管庫</h3>
+          <p>エンドミル・タップ・インサートなど、各社製の切削工具を体系的に在庫管理。多品種・短納期のご要望にも、材質や形状に応じた最適工具ですぐに対応します。</p>
         </div>
       </div>
       <div class="equip-row">
-        <figure class="equip-row__media"><img src="/images/equipment-5.jpg" alt="TIG溶接機（パートナー設備の一例）" loading="lazy"></figure>
+        <figure class="equip-row__media"><img src="/images/products/1791165555202_6329746260524595665_6329746260524595665_c00e9d0f9237d58319cc2eb50f0c3ad7.jpg" alt="TIG溶接機" loading="lazy"></figure>
         <div class="equip-row__num" aria-hidden="true">05</div>
         <div class="equip-row__body">
-          <p class="maker">日越パートナー網</p>
-          <h3>溶接・板金の大型設備群</h3>
-          <p>TIG／MIG／MAG溶接機、大型レーザー切断機、プレスブレーキ、CNCタレットパンチなど。戦略パートナーとの連携で、大型溶接構造や重量物加工にも対応します。（写真はTIG溶接機の一例）</p>
+          <p class="maker">Panasonic（YD-350KR2）</p>
+          <h3>TIG溶接機</h3>
+          <p>美しいビードと高い信頼性を両立するTIG溶接機。戦略パートナー網とも連携し、大型溶接構造や重量物加工にも対応します。</p>
         </div>
       </div>
+      <div class="equip-row equip-row--rev">
+        <figure class="equip-row__media"><img src="/images/products/1791165555184_6329746260524595665_6329746260524595665_cbba8fd9402bfbf64c80b50e5eeb88bd.jpg" alt="ラジアルボール盤" loading="lazy"></figure>
+        <div class="equip-row__num" aria-hidden="true">06</div>
+        <div class="equip-row__body">
+          <p class="maker">TOA（TRD800L）</p>
+          <h3>ラジアルボール盤</h3>
+          <p>アームが旋回する構造で、大型ワークへの穴あけ・タップ加工を柔軟にこなします。治具ベースなど大物部品の加工にも活躍する設備です。</p>
+        </div>
+      </div>
+      <div class="equip-row">
+        <figure class="equip-row__media"><img src="/images/products/1791165555193_6329746260524595665_6329746260524595665_b3f5eacd3c6479afd41466cc9c50bf05.jpg" alt="治具用中ぐり盤" loading="lazy"></figure>
+        <div class="equip-row__num" aria-hidden="true">07</div>
+        <div class="equip-row__body">
+          <p class="maker">治具設計・製作</p>
+          <h3>治具用中ぐり盤</h3>
+          <p>デジタルスケールを備え、治具ベースの穴位置を高精度に加工。ポカヨケ構造や位置決めピンなど、治具の精度を根本から支える設備です。</p>
+        </div>
+      </div>
+      <div class="equip-row equip-row--rev">
+        <figure class="equip-row__media"><img src="/images/products/1791165555219_6329746260524595665_6329746260524595665_de5bbd69b94363883b5dc8228a4f2d5d.jpg" alt="卓上ボール盤" loading="lazy"></figure>
+        <div class="equip-row__num" aria-hidden="true">08</div>
+        <div class="equip-row__body">
+          <p class="maker">KITAGAWA（KDS-360）</p>
+          <h3>卓上ボール盤</h3>
+          <p>小物部品の穴あけ・面取りを担当する卓上タイプのボール盤。ラジアルボール盤・マシニングセンタと使い分け、多品種の加工に柔軟に対応します。</p>
+        </div>
+      </div>
+      <div class="equip-row">
+        <figure class="equip-row__media"><img src="/images/products/1791165555228_6329746260524595665_6329746260524595665_18e1e891f77dbb5185fbd06e542635e0.jpg" alt="フォークリフトによる構内搬送" loading="lazy"></figure>
+        <div class="equip-row__num" aria-hidden="true">09</div>
+        <div class="equip-row__body">
+          <p class="maker">構内搬送</p>
+          <h3>フォークリフトによる構内搬送</h3>
+          <p>大型ワークや資材の搬入・搬出を安全かつ効率的に行い、重量物加工案件のスムーズな工程進行を支えます。</p>
+        </div>
+      </div>
+      <div class="equip-row equip-row--rev">
+        <figure class="equip-row__media"><img src="/images/products/1791165555269_6329746260524595665_6329746260524595665_df63609658117ecc6126da2cc12704b4.jpg" alt="オイルフリーエアコンプレッサー" loading="lazy"></figure>
+        <div class="equip-row__num" aria-hidden="true">10</div>
+        <div class="equip-row__body">
+          <p class="maker">ANEST IWATA</p>
+          <h3>オイルフリーエアコンプレッサー</h3>
+          <p>清浄な圧縮空気を安定供給。加工面やワークへの油分混入を防ぎ、精密部品の清浄度を保ちながらエア工具・ブロー作業に対応します。</p>
+        </div>
+      </div>
+    <div class="tool-gallery">
+      <h3 class="products-group__title" style="margin-bottom: 10px;">工場スナップショット</h3>
+      <p class="tool-gallery__intro">計測器・工具キャビネット・マシニングセンタから溶接機、フォークリフトまで。弊社工場の“現場そのまま”を撮影したスナップショットです。クリックで拡大表示できます。</p>
+      <ul class="tool-gallery__grid">
+            <li><button class="tool-gallery__item" type="button" data-full="/images/products/1791165525967_6329746260524595665_6329746260524595665_952310138619f417260e1a57bcaa4752.jpg"><img src="/images/products/1791165525967_6329746260524595665_6329746260524595665_952310138619f417260e1a57bcaa4752.jpg" alt="興盛ネクサス 工場スナップショット 01" loading="lazy"></button></li>
+            <li><button class="tool-gallery__item" type="button" data-full="/images/products/1791165525991_6329746260524595665_6329746260524595665_6b8d8e58f04736bb170500774ac7fdc7.jpg"><img src="/images/products/1791165525991_6329746260524595665_6329746260524595665_6b8d8e58f04736bb170500774ac7fdc7.jpg" alt="興盛ネクサス 工場スナップショット 02" loading="lazy"></button></li>
+            <li><button class="tool-gallery__item" type="button" data-full="/images/products/1791165526003_6329746260524595665_6329746260524595665_9ee2ee436db3bded2acf51ec2b1b9b1b.jpg"><img src="/images/products/1791165526003_6329746260524595665_6329746260524595665_9ee2ee436db3bded2acf51ec2b1b9b1b.jpg" alt="興盛ネクサス 工場スナップショット 03" loading="lazy"></button></li>
+            <li><button class="tool-gallery__item" type="button" data-full="/images/products/1791165526014_6329746260524595665_6329746260524595665_997706dbab525b23a81eedb80cb01253.jpg"><img src="/images/products/1791165526014_6329746260524595665_6329746260524595665_997706dbab525b23a81eedb80cb01253.jpg" alt="興盛ネクサス 工場スナップショット 04" loading="lazy"></button></li>
+            <li><button class="tool-gallery__item" type="button" data-full="/images/products/1791165526030_6329746260524595665_6329746260524595665_5b2f8420dbb61c158d5d0d73fe935080.jpg"><img src="/images/products/1791165526030_6329746260524595665_6329746260524595665_5b2f8420dbb61c158d5d0d73fe935080.jpg" alt="興盛ネクサス 工場スナップショット 05" loading="lazy"></button></li>
+            <li><button class="tool-gallery__item" type="button" data-full="/images/products/1791165526050_6329746260524595665_6329746260524595665_afdd26abf68e931a061639fbeeb8c436.jpg"><img src="/images/products/1791165526050_6329746260524595665_6329746260524595665_afdd26abf68e931a061639fbeeb8c436.jpg" alt="興盛ネクサス 工場スナップショット 06" loading="lazy"></button></li>
+            <li><button class="tool-gallery__item" type="button" data-full="/images/products/1791165526060_6329746260524595665_6329746260524595665_306538533c417f784e19c8d101803761.jpg"><img src="/images/products/1791165526060_6329746260524595665_6329746260524595665_306538533c417f784e19c8d101803761.jpg" alt="興盛ネクサス 工場スナップショット 07" loading="lazy"></button></li>
+            <li><button class="tool-gallery__item" type="button" data-full="/images/products/1791165526074_6329746260524595665_6329746260524595665_fdf1bb2b86c9a55904004a17bbc978fc.jpg"><img src="/images/products/1791165526074_6329746260524595665_6329746260524595665_fdf1bb2b86c9a55904004a17bbc978fc.jpg" alt="興盛ネクサス 工場スナップショット 08" loading="lazy"></button></li>
+            <li><button class="tool-gallery__item" type="button" data-full="/images/products/1791165526086_6329746260524595665_6329746260524595665_ebbdc1196f9449f107519683fd5ba89f.jpg"><img src="/images/products/1791165526086_6329746260524595665_6329746260524595665_ebbdc1196f9449f107519683fd5ba89f.jpg" alt="興盛ネクサス 工場スナップショット 09" loading="lazy"></button></li>
+            <li><button class="tool-gallery__item" type="button" data-full="/images/products/1791165526100_6329746260524595665_6329746260524595665_4b02efb8ca482db1b4de5adb5939982b.jpg"><img src="/images/products/1791165526100_6329746260524595665_6329746260524595665_4b02efb8ca482db1b4de5adb5939982b.jpg" alt="興盛ネクサス 工場スナップショット 10" loading="lazy"></button></li>
+            <li><button class="tool-gallery__item" type="button" data-full="/images/products/1791165526111_6329746260524595665_6329746260524595665_689a4e81203295767a62426630181d61.jpg"><img src="/images/products/1791165526111_6329746260524595665_6329746260524595665_689a4e81203295767a62426630181d61.jpg" alt="興盛ネクサス 工場スナップショット 11" loading="lazy"></button></li>
+            <li><button class="tool-gallery__item" type="button" data-full="/images/products/1791165526121_6329746260524595665_6329746260524595665_9c12c19c091a102a9be041d59e3b5e0f.jpg"><img src="/images/products/1791165526121_6329746260524595665_6329746260524595665_9c12c19c091a102a9be041d59e3b5e0f.jpg" alt="興盛ネクサス 工場スナップショット 12" loading="lazy"></button></li>
+            <li><button class="tool-gallery__item" type="button" data-full="/images/products/1791165526135_6329746260524595665_6329746260524595665_8c5af671c4654f7e0e00c595ba0cbdc7.jpg"><img src="/images/products/1791165526135_6329746260524595665_6329746260524595665_8c5af671c4654f7e0e00c595ba0cbdc7.jpg" alt="興盛ネクサス 工場スナップショット 13" loading="lazy"></button></li>
+            <li><button class="tool-gallery__item" type="button" data-full="/images/products/1791165526152_6329746260524595665_6329746260524595665_88863ed922d39c2ae88c2839a981eeda.jpg"><img src="/images/products/1791165526152_6329746260524595665_6329746260524595665_88863ed922d39c2ae88c2839a981eeda.jpg" alt="興盛ネクサス 工場スナップショット 14" loading="lazy"></button></li>
+            <li><button class="tool-gallery__item" type="button" data-full="/images/products/1791165526163_6329746260524595665_6329746260524595665_c6269a77f45228d8929a48cfbef3e0f8.jpg"><img src="/images/products/1791165526163_6329746260524595665_6329746260524595665_c6269a77f45228d8929a48cfbef3e0f8.jpg" alt="興盛ネクサス 工場スナップショット 15" loading="lazy"></button></li>
+            <li><button class="tool-gallery__item" type="button" data-full="/images/products/1791165544041_6329746260524595665_6329746260524595665_b4ca31a85423a15cb3a3e631c31a0e12.jpg"><img src="/images/products/1791165544041_6329746260524595665_6329746260524595665_b4ca31a85423a15cb3a3e631c31a0e12.jpg" alt="興盛ネクサス 工場スナップショット 16" loading="lazy"></button></li>
+            <li><button class="tool-gallery__item" type="button" data-full="/images/products/1791165544053_6329746260524595665_6329746260524595665_0a51996e08060a3950ea27c399d47dd7.jpg"><img src="/images/products/1791165544053_6329746260524595665_6329746260524595665_0a51996e08060a3950ea27c399d47dd7.jpg" alt="興盛ネクサス 工場スナップショット 17" loading="lazy"></button></li>
+            <li><button class="tool-gallery__item" type="button" data-full="/images/products/1791165544063_6329746260524595665_6329746260524595665_870022f9ccb1f3b30f176d4d4ab18e7a.jpg"><img src="/images/products/1791165544063_6329746260524595665_6329746260524595665_870022f9ccb1f3b30f176d4d4ab18e7a.jpg" alt="興盛ネクサス 工場スナップショット 18" loading="lazy"></button></li>
+            <li><button class="tool-gallery__item" type="button" data-full="/images/products/1791165544074_6329746260524595665_6329746260524595665_0531e19bb79037b852eda9ec715afa2e.jpg"><img src="/images/products/1791165544074_6329746260524595665_6329746260524595665_0531e19bb79037b852eda9ec715afa2e.jpg" alt="興盛ネクサス 工場スナップショット 19" loading="lazy"></button></li>
+            <li><button class="tool-gallery__item" type="button" data-full="/images/products/1791165544086_6329746260524595665_6329746260524595665_6c4d5cc667076af9d1527d8047084f23.jpg"><img src="/images/products/1791165544086_6329746260524595665_6329746260524595665_6c4d5cc667076af9d1527d8047084f23.jpg" alt="興盛ネクサス 工場スナップショット 20" loading="lazy"></button></li>
+            <li><button class="tool-gallery__item" type="button" data-full="/images/products/1791165544100_6329746260524595665_6329746260524595665_afabf253a56e19dff19a10771217145a.jpg"><img src="/images/products/1791165544100_6329746260524595665_6329746260524595665_afabf253a56e19dff19a10771217145a.jpg" alt="興盛ネクサス 工場スナップショット 21" loading="lazy"></button></li>
+            <li><button class="tool-gallery__item" type="button" data-full="/images/products/1791165544120_6329746260524595665_6329746260524595665_a8d977b58e8d8fdf74a0f7cb8217b9ad.jpg"><img src="/images/products/1791165544120_6329746260524595665_6329746260524595665_a8d977b58e8d8fdf74a0f7cb8217b9ad.jpg" alt="興盛ネクサス 工場スナップショット 22" loading="lazy"></button></li>
+            <li><button class="tool-gallery__item" type="button" data-full="/images/products/1791165544131_6329746260524595665_6329746260524595665_b893873a624e8153a1cd90f5e60365f6.jpg"><img src="/images/products/1791165544131_6329746260524595665_6329746260524595665_b893873a624e8153a1cd90f5e60365f6.jpg" alt="興盛ネクサス 工場スナップショット 23" loading="lazy"></button></li>
+            <li><button class="tool-gallery__item" type="button" data-full="/images/products/1791165544145_6329746260524595665_6329746260524595665_afd297e7c7fe32bcf04ada6e2d7679ec.jpg"><img src="/images/products/1791165544145_6329746260524595665_6329746260524595665_afd297e7c7fe32bcf04ada6e2d7679ec.jpg" alt="興盛ネクサス 工場スナップショット 24" loading="lazy"></button></li>
+            <li><button class="tool-gallery__item" type="button" data-full="/images/products/1791165544156_6329746260524595665_6329746260524595665_5db53434ffaff39c21e9e5e850bfd244.jpg"><img src="/images/products/1791165544156_6329746260524595665_6329746260524595665_5db53434ffaff39c21e9e5e850bfd244.jpg" alt="興盛ネクサス 工場スナップショット 25" loading="lazy"></button></li>
+            <li><button class="tool-gallery__item" type="button" data-full="/images/products/1791165544167_6329746260524595665_6329746260524595665_1939e8b4eeacc5238c6e32852967097f.jpg"><img src="/images/products/1791165544167_6329746260524595665_6329746260524595665_1939e8b4eeacc5238c6e32852967097f.jpg" alt="興盛ネクサス 工場スナップショット 26" loading="lazy"></button></li>
+            <li><button class="tool-gallery__item" type="button" data-full="/images/products/1791165544176_6329746260524595665_6329746260524595665_b25c02d9600620189af62d08db50d44d.jpg"><img src="/images/products/1791165544176_6329746260524595665_6329746260524595665_b25c02d9600620189af62d08db50d44d.jpg" alt="興盛ネクサス 工場スナップショット 27" loading="lazy"></button></li>
+            <li><button class="tool-gallery__item" type="button" data-full="/images/products/1791165544185_6329746260524595665_6329746260524595665_7f20396bdf8f749e4ca6b05b88517b25.jpg"><img src="/images/products/1791165544185_6329746260524595665_6329746260524595665_7f20396bdf8f749e4ca6b05b88517b25.jpg" alt="興盛ネクサス 工場スナップショット 28" loading="lazy"></button></li>
+            <li><button class="tool-gallery__item" type="button" data-full="/images/products/1791165544195_6329746260524595665_6329746260524595665_c9c88d9696bd5ff78c21eb1e3c218bdb.jpg"><img src="/images/products/1791165544195_6329746260524595665_6329746260524595665_c9c88d9696bd5ff78c21eb1e3c218bdb.jpg" alt="興盛ネクサス 工場スナップショット 29" loading="lazy"></button></li>
+            <li><button class="tool-gallery__item" type="button" data-full="/images/products/1791165544206_6329746260524595665_6329746260524595665_d01714312c9995b31cf692503d500f4c.jpg"><img src="/images/products/1791165544206_6329746260524595665_6329746260524595665_d01714312c9995b31cf692503d500f4c.jpg" alt="興盛ネクサス 工場スナップショット 30" loading="lazy"></button></li>
+            <li><button class="tool-gallery__item" type="button" data-full="/images/products/1791165544216_6329746260524595665_6329746260524595665_b133b1a50608ca2c0e002abe80645603.jpg"><img src="/images/products/1791165544216_6329746260524595665_6329746260524595665_b133b1a50608ca2c0e002abe80645603.jpg" alt="興盛ネクサス 工場スナップショット 31" loading="lazy"></button></li>
+            <li><button class="tool-gallery__item" type="button" data-full="/images/products/1791165544225_6329746260524595665_6329746260524595665_75ea761bd9543b8cdaa2290041e786a4.jpg"><img src="/images/products/1791165544225_6329746260524595665_6329746260524595665_75ea761bd9543b8cdaa2290041e786a4.jpg" alt="興盛ネクサス 工場スナップショット 32" loading="lazy"></button></li>
+            <li><button class="tool-gallery__item" type="button" data-full="/images/products/1791165544237_6329746260524595665_6329746260524595665_120bc7e595bfa07bebb29fc16dcd8641.jpg"><img src="/images/products/1791165544237_6329746260524595665_6329746260524595665_120bc7e595bfa07bebb29fc16dcd8641.jpg" alt="興盛ネクサス 工場スナップショット 33" loading="lazy"></button></li>
+            <li><button class="tool-gallery__item" type="button" data-full="/images/products/1791165544246_6329746260524595665_6329746260524595665_6cffb7d3967056e935d551a22e7306f2.jpg"><img src="/images/products/1791165544246_6329746260524595665_6329746260524595665_6cffb7d3967056e935d551a22e7306f2.jpg" alt="興盛ネクサス 工場スナップショット 34" loading="lazy"></button></li>
+            <li><button class="tool-gallery__item" type="button" data-full="/images/products/1791165544255_6329746260524595665_6329746260524595665_941cb9eb40b90db73e412414bb5b6577.jpg"><img src="/images/products/1791165544255_6329746260524595665_6329746260524595665_941cb9eb40b90db73e412414bb5b6577.jpg" alt="興盛ネクサス 工場スナップショット 35" loading="lazy"></button></li>
+            <li><button class="tool-gallery__item" type="button" data-full="/images/products/1791165544263_6329746260524595665_6329746260524595665_75b437e694eae7eec692b83d86cd6005.jpg"><img src="/images/products/1791165544263_6329746260524595665_6329746260524595665_75b437e694eae7eec692b83d86cd6005.jpg" alt="興盛ネクサス 工場スナップショット 36" loading="lazy"></button></li>
+            <li><button class="tool-gallery__item" type="button" data-full="/images/products/1791165544272_6329746260524595665_6329746260524595665_d9af43f7f67b108eb29bacb102ec2d76.jpg"><img src="/images/products/1791165544272_6329746260524595665_6329746260524595665_d9af43f7f67b108eb29bacb102ec2d76.jpg" alt="興盛ネクサス 工場スナップショット 37" loading="lazy"></button></li>
+            <li><button class="tool-gallery__item" type="button" data-full="/images/products/1791165544282_6329746260524595665_6329746260524595665_fb61d230009cd28dada5bf60f370307d.jpg"><img src="/images/products/1791165544282_6329746260524595665_6329746260524595665_fb61d230009cd28dada5bf60f370307d.jpg" alt="興盛ネクサス 工場スナップショット 38" loading="lazy"></button></li>
+            <li><button class="tool-gallery__item" type="button" data-full="/images/products/1791165544291_6329746260524595665_6329746260524595665_8dafd468dd524e9da37fa7c58ee760cb.jpg"><img src="/images/products/1791165544291_6329746260524595665_6329746260524595665_8dafd468dd524e9da37fa7c58ee760cb.jpg" alt="興盛ネクサス 工場スナップショット 39" loading="lazy"></button></li>
+            <li><button class="tool-gallery__item" type="button" data-full="/images/products/1791165544300_6329746260524595665_6329746260524595665_c92b8fe8aec1a8a8af456f1058d8e161.jpg"><img src="/images/products/1791165544300_6329746260524595665_6329746260524595665_c92b8fe8aec1a8a8af456f1058d8e161.jpg" alt="興盛ネクサス 工場スナップショット 40" loading="lazy"></button></li>
+            <li><button class="tool-gallery__item" type="button" data-full="/images/products/1791165544311_6329746260524595665_6329746260524595665_259a305e3bc33a7e1d943d45fc495e25.jpg"><img src="/images/products/1791165544311_6329746260524595665_6329746260524595665_259a305e3bc33a7e1d943d45fc495e25.jpg" alt="興盛ネクサス 工場スナップショット 41" loading="lazy"></button></li>
+            <li><button class="tool-gallery__item" type="button" data-full="/images/products/1791165544320_6329746260524595665_6329746260524595665_a0e55ff52afa17bf7b206a6b76eecebc.jpg"><img src="/images/products/1791165544320_6329746260524595665_6329746260524595665_a0e55ff52afa17bf7b206a6b76eecebc.jpg" alt="興盛ネクサス 工場スナップショット 42" loading="lazy"></button></li>
+            <li><button class="tool-gallery__item" type="button" data-full="/images/products/1791165544329_6329746260524595665_6329746260524595665_6ea7818cbde0f23db45dfb2ec025dfd2.jpg"><img src="/images/products/1791165544329_6329746260524595665_6329746260524595665_6ea7818cbde0f23db45dfb2ec025dfd2.jpg" alt="興盛ネクサス 工場スナップショット 43" loading="lazy"></button></li>
+            <li><button class="tool-gallery__item" type="button" data-full="/images/products/1791165544337_6329746260524595665_6329746260524595665_3ae16f33057bda424174b6b5c5674b0b.jpg"><img src="/images/products/1791165544337_6329746260524595665_6329746260524595665_3ae16f33057bda424174b6b5c5674b0b.jpg" alt="興盛ネクサス 工場スナップショット 44" loading="lazy"></button></li>
+            <li><button class="tool-gallery__item" type="button" data-full="/images/products/1791165544346_6329746260524595665_6329746260524595665_e899d2562204025df135090c7ec2e10b.jpg"><img src="/images/products/1791165544346_6329746260524595665_6329746260524595665_e899d2562204025df135090c7ec2e10b.jpg" alt="興盛ネクサス 工場スナップショット 45" loading="lazy"></button></li>
+            <li><button class="tool-gallery__item" type="button" data-full="/images/products/1791165544354_6329746260524595665_6329746260524595665_e634da312957e2e0fd15a0092560c9c4.jpg"><img src="/images/products/1791165544354_6329746260524595665_6329746260524595665_e634da312957e2e0fd15a0092560c9c4.jpg" alt="興盛ネクサス 工場スナップショット 46" loading="lazy"></button></li>
+            <li><button class="tool-gallery__item" type="button" data-full="/images/products/1791165544363_6329746260524595665_6329746260524595665_31a416d7ead06ac3ce3d985684082f12.jpg"><img src="/images/products/1791165544363_6329746260524595665_6329746260524595665_31a416d7ead06ac3ce3d985684082f12.jpg" alt="興盛ネクサス 工場スナップショット 47" loading="lazy"></button></li>
+            <li><button class="tool-gallery__item" type="button" data-full="/images/products/1791165544371_6329746260524595665_6329746260524595665_e46f59e206079a567e274e0ef40ccacf.jpg"><img src="/images/products/1791165544371_6329746260524595665_6329746260524595665_e46f59e206079a567e274e0ef40ccacf.jpg" alt="興盛ネクサス 工場スナップショット 48" loading="lazy"></button></li>
+            <li><button class="tool-gallery__item" type="button" data-full="/images/products/1791165544380_6329746260524595665_6329746260524595665_a6b54d1277c6c8b3874362a6f258b0e3.jpg"><img src="/images/products/1791165544380_6329746260524595665_6329746260524595665_a6b54d1277c6c8b3874362a6f258b0e3.jpg" alt="興盛ネクサス 工場スナップショット 49" loading="lazy"></button></li>
+            <li><button class="tool-gallery__item" type="button" data-full="/images/products/1791165544392_6329746260524595665_6329746260524595665_169cf595468c8d9b2cd88b8bcce6e809.jpg"><img src="/images/products/1791165544392_6329746260524595665_6329746260524595665_169cf595468c8d9b2cd88b8bcce6e809.jpg" alt="興盛ネクサス 工場スナップショット 50" loading="lazy"></button></li>
+            <li><button class="tool-gallery__item" type="button" data-full="/images/products/1791165544400_6329746260524595665_6329746260524595665_092764b2270150dc64401a91eae6838d.jpg"><img src="/images/products/1791165544400_6329746260524595665_6329746260524595665_092764b2270150dc64401a91eae6838d.jpg" alt="興盛ネクサス 工場スナップショット 51" loading="lazy"></button></li>
+            <li><button class="tool-gallery__item" type="button" data-full="/images/products/1791165544408_6329746260524595665_6329746260524595665_a019b5dfa0953e058857164c7cfad704.jpg"><img src="/images/products/1791165544408_6329746260524595665_6329746260524595665_a019b5dfa0953e058857164c7cfad704.jpg" alt="興盛ネクサス 工場スナップショット 52" loading="lazy"></button></li>
+            <li><button class="tool-gallery__item" type="button" data-full="/images/products/1791165555157_6329746260524595665_6329746260524595665_b2215c43d3e8847753d07dde41e1a12f.jpg"><img src="/images/products/1791165555157_6329746260524595665_6329746260524595665_b2215c43d3e8847753d07dde41e1a12f.jpg" alt="興盛ネクサス 工場スナップショット 53" loading="lazy"></button></li>
+            <li><button class="tool-gallery__item" type="button" data-full="/images/products/1791165555174_6329746260524595665_6329746260524595665_e726dc2e7a7c125875bcd4f360649462.jpg"><img src="/images/products/1791165555174_6329746260524595665_6329746260524595665_e726dc2e7a7c125875bcd4f360649462.jpg" alt="興盛ネクサス 工場スナップショット 54" loading="lazy"></button></li>
+            <li><button class="tool-gallery__item" type="button" data-full="/images/products/1791165555184_6329746260524595665_6329746260524595665_cbba8fd9402bfbf64c80b50e5eeb88bd.jpg"><img src="/images/products/1791165555184_6329746260524595665_6329746260524595665_cbba8fd9402bfbf64c80b50e5eeb88bd.jpg" alt="興盛ネクサス 工場スナップショット 55" loading="lazy"></button></li>
+            <li><button class="tool-gallery__item" type="button" data-full="/images/products/1791165555193_6329746260524595665_6329746260524595665_b3f5eacd3c6479afd41466cc9c50bf05.jpg"><img src="/images/products/1791165555193_6329746260524595665_6329746260524595665_b3f5eacd3c6479afd41466cc9c50bf05.jpg" alt="興盛ネクサス 工場スナップショット 56" loading="lazy"></button></li>
+            <li><button class="tool-gallery__item" type="button" data-full="/images/products/1791165555202_6329746260524595665_6329746260524595665_c00e9d0f9237d58319cc2eb50f0c3ad7.jpg"><img src="/images/products/1791165555202_6329746260524595665_6329746260524595665_c00e9d0f9237d58319cc2eb50f0c3ad7.jpg" alt="興盛ネクサス 工場スナップショット 57" loading="lazy"></button></li>
+            <li><button class="tool-gallery__item" type="button" data-full="/images/products/1791165555211_6329746260524595665_6329746260524595665_6ba499a34b5b5b5d623c8da53a113fc6.jpg"><img src="/images/products/1791165555211_6329746260524595665_6329746260524595665_6ba499a34b5b5b5d623c8da53a113fc6.jpg" alt="興盛ネクサス 工場スナップショット 58" loading="lazy"></button></li>
+            <li><button class="tool-gallery__item" type="button" data-full="/images/products/1791165555219_6329746260524595665_6329746260524595665_de5bbd69b94363883b5dc8228a4f2d5d.jpg"><img src="/images/products/1791165555219_6329746260524595665_6329746260524595665_de5bbd69b94363883b5dc8228a4f2d5d.jpg" alt="興盛ネクサス 工場スナップショット 59" loading="lazy"></button></li>
+            <li><button class="tool-gallery__item" type="button" data-full="/images/products/1791165555228_6329746260524595665_6329746260524595665_18e1e891f77dbb5185fbd06e542635e0.jpg"><img src="/images/products/1791165555228_6329746260524595665_6329746260524595665_18e1e891f77dbb5185fbd06e542635e0.jpg" alt="興盛ネクサス 工場スナップショット 60" loading="lazy"></button></li>
+            <li><button class="tool-gallery__item" type="button" data-full="/images/products/1791165555248_6329746260524595665_6329746260524595665_a538f886a52c80f5945b346f2197fe7d.jpg"><img src="/images/products/1791165555248_6329746260524595665_6329746260524595665_a538f886a52c80f5945b346f2197fe7d.jpg" alt="興盛ネクサス 工場スナップショット 61" loading="lazy"></button></li>
+            <li><button class="tool-gallery__item" type="button" data-full="/images/products/1791165555258_6329746260524595665_6329746260524595665_72614a0340dee7880d705cfebc9a1801.jpg"><img src="/images/products/1791165555258_6329746260524595665_6329746260524595665_72614a0340dee7880d705cfebc9a1801.jpg" alt="興盛ネクサス 工場スナップショット 62" loading="lazy"></button></li>
+            <li><button class="tool-gallery__item" type="button" data-full="/images/products/1791165555269_6329746260524595665_6329746260524595665_df63609658117ecc6126da2cc12704b4.jpg"><img src="/images/products/1791165555269_6329746260524595665_6329746260524595665_df63609658117ecc6126da2cc12704b4.jpg" alt="興盛ネクサス 工場スナップショット 63" loading="lazy"></button></li>
+            <li><button class="tool-gallery__item" type="button" data-full="/images/products/1791165555281_6329746260524595665_6329746260524595665_d9140cbb23c96d14d12a327104584c6b.jpg"><img src="/images/products/1791165555281_6329746260524595665_6329746260524595665_d9140cbb23c96d14d12a327104584c6b.jpg" alt="興盛ネクサス 工場スナップショット 64" loading="lazy"></button></li>
+      </ul>
+    </div>
     <div class="section__foot" style="margin-top: 40px;">
       <a class="btn-more" href="../contact-us/">設備・加工に関するご相談はこちら</a>
     </div>
   </div>
 </section>
+
+<!-- Tool gallery lightbox -->
+<div class="tool-gallery__lightbox" id="toolLightbox">
+  <button class="tool-gallery__lightbox-close" id="toolLightboxClose" type="button" aria-label="閉じる">&times;</button>
+  <img id="toolLightboxImg" src="" alt="">
+</div>
 
 <!-- Footer -->
 <footer class="footer">
@@ -1875,6 +2095,33 @@
     foldMedia.forEach(m => revealObserver.observe(m));
     fadeBodies.forEach(b => revealObserver.observe(b));
   }
+
+  // ---------- tool gallery lightbox ----------
+  const toolLightbox = document.getElementById('toolLightbox');
+  const toolLightboxImg = document.getElementById('toolLightboxImg');
+  const toolLightboxClose = document.getElementById('toolLightboxClose');
+  document.querySelectorAll('.tool-gallery__item').forEach(btn => {
+    btn.addEventListener('click', () => {
+      toolLightboxImg.src = btn.dataset.full;
+      toolLightboxImg.alt = btn.querySelector('img').alt;
+      toolLightbox.classList.add('is-open');
+    });
+  });
+  function closeToolLightbox() {
+    toolLightbox.classList.remove('is-open');
+    toolLightboxImg.src = '';
+  }
+  if (toolLightboxClose) {
+    toolLightboxClose.addEventListener('click', closeToolLightbox);
+  }
+  if (toolLightbox) {
+    toolLightbox.addEventListener('click', (e) => {
+      if (e.target === toolLightbox) closeToolLightbox();
+    });
+  }
+  window.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeToolLightbox();
+  });
 
   // ---------- logo gears (from ux.html) ----------
   // trapezoid-tooth gear outline: for each tooth, two points on the root
