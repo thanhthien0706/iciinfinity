@@ -7,7 +7,7 @@ on:
     # (ảnh -> post.json -> posts.json). Nhờ vậy CI không bao giờ build trạng thái
     # dở dang và mỗi thao tác chỉ chạy đúng 1 lần build.
     paths:
-      - 'backend/data/posts.json'
+      - 'v1/backend/data/posts.json'
   workflow_dispatch:      # cho phép bấm chạy tay trên tab Actions
 
 permissions:
@@ -26,13 +26,13 @@ jobs:
           ref: master   # luôn build từ HEAD mới nhất (kể cả khi run bị xếp hàng)
 
       - name: Build
-        run: python3 backend/scripts/build.py
+        run: python3 v1/backend/scripts/build.py
 
       - name: Commit & push
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add html
+          git add v1/html
           if git diff --staged --quiet; then
             echo "Không có thay đổi."
           else

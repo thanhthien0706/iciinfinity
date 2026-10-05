@@ -1,6 +1,7 @@
 {
-    "[html]": {
-        "editor.suggest.insertMode": "replace",
-        "editor.defaultFormatter": "vscode.html-language-features"
-    }
+  "[html]": {
+    "editor.suggest.insertMode": "replace",
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "liveServer.settings.port": 5501
 }
