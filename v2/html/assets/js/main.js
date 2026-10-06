@@ -1,4 +1,4 @@
-// Kosei Nexus — overlay nav, scroll-reveal, tabs, lightbox
+// Ici Infinity — overlay nav, scroll-reveal, tabs, lightbox
 (function(){
   "use strict";
 
