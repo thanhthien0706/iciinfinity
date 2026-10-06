@@ -1,0 +1,606 @@
+@charset "UTF-8";
+/**************************************************
+ Recruit Style
+**************************************************/
+.recruit {
+  /*************************
+	 Recruit Style (Top)
+	*************************/
+  /*************************
+	 トップの写真設定
+	*************************/
+  /*************************
+	 Voice Top
+	*************************/
+  /*************************
+	 Voice Detail
+	*************************/
+  /*
+	 * 募集要項用のテーブル
+	 */
+}
+
+.recruit .mainVisualTop {
+  height: 600px;
+  position: relative;
+}
+
+.recruit .mainVisualTop .photoContainer {
+  height: 775px;
+  background: url(../images/products/p39.jpg) no-repeat center top;
+  background-size: cover;
+}
+
+.recruit .mainVisualTop .textContainer {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  bottom: 88px;
+  color: #fff;
+}
+
+.recruit .mainVisualTop .textContainer .sub {
+  font-size: 2em;
+  color: #8D785A;
+  opacity: 0;
+}
+
+.recruit .mainVisualTop .textContainer .title {
+  font-size: 4.5em;
+  display: inline-block;
+  /*border-bottom:1px solid #fff;*/
+  overflow: hidden;
+  opacity: 0;
+  margin-bottom: 0;
+}
+
+.recruit .mainVisualTop .textContainer .line {
+  width: 0;
+  height: 1px;
+  margin: auto;
+  background: #fff;
+  margin-bottom: 20px;
+}
+
+.recruit .mainVisualTop .textContainer .text {
+  margin-bottom: 40px;
+  font-size: 1.1em;
+  opacity: 0;
+}
+
+.recruit .mainVisualTop .textContainer .btn {
+  width: 220px;
+  margin: auto;
+}
+
+.recruit .mainVisualTop .textContainer .btn a {
+  color: #fff;
+  display: block;
+  padding: 8px 0 8px 0;
+  transition: 0.2s;
+  border: 1px solid #fff;
+}
+
+.recruit .mainVisualTop .textContainer .btn a:hover {
+  background: #8D785A;
+  transition: 0.2s;
+  border: 1px solid #8D785A;
+}
+
+.recruit .subTopArea .boxContainer .img0 {
+  background: url(../images/products/p40.jpg) center center;
+}
+
+.recruit .subTopArea .boxContainer .img1 {
+  background: url(../images/products/p41.jpg) center center;
+}
+
+.recruit .subTopArea .boxContainer .img2 {
+  background: url(../images/products/p42.jpg) center center;
+}
+
+.recruit .subTopArea .boxContainer .img3 {
+  background: url(../images/products/p43.jpg) center center;
+}
+
+.recruit .subTopArea .boxContainer .img4 {
+  background: url(../images/products/p44.jpg) center center;
+}
+
+.recruit .subTopArea .boxContainer .image {
+  background-size: cover;
+}
+
+.recruit .mainVisualAreaMerit .photoContainer {
+  background: url(../images/recruit/bg_main_visual_merit.jpg) no-repeat center top;
+  background-size: cover;
+}
+
+.recruit .mainVisualAreaJob .photoContainer {
+  background: url(../images/recruit/bg_main_visual_job.jpg) no-repeat center top;
+  background-size: cover;
+}
+
+.recruit .mainVisualAreaEnvironment .photoContainer {
+  background: url(../images/recruit/bg_main_visual_environment.jpg) no-repeat center top;
+  background-size: cover;
+}
+
+.recruit .mainVisualAreaRequirement .photoContainer {
+  background: url(../images/recruit/bg_main_visual_requirement.jpg) no-repeat center top;
+  background-size: cover;
+}
+
+.recruit .mainVisualAreaQa .photoContainer {
+  background: url(../images/recruit/bg_main_visual_qa.jpg) no-repeat center top;
+  background-size: cover;
+}
+
+.recruit .mainVisualVoiceTop {
+  height: 449px;
+}
+
+.recruit .mainVisualVoiceTop .photoContainer {
+  height: 700px;
+  background: url(../images/recruit/voice/top_bg_main_visual.jpg) no-repeat center top;
+  background-size: cover;
+}
+
+.recruit .detail1 .photoContainer {
+  background: url(../images/recruit/voice/detail1_bg_main_visual.jpg) no-repeat center top;
+}
+
+.recruit .detail2 .photoContainer {
+  background: url(../images/recruit/voice/detail2_bg_main_visual.jpg) no-repeat center top;
+}
+
+.recruit .detail3 .photoContainer {
+  background: url(../images/recruit/voice/detail3_bg_main_visual.jpg) no-repeat center top;
+}
+
+.recruit .detail4 .photoContainer {
+  background: url(../images/recruit/voice/detail4_bg_main_visual.jpg) no-repeat center top;
+}
+
+.recruit .detail5 .photoContainer {
+  background: url(../images/recruit/voice/detail5_bg_main_visual.jpg) no-repeat center top;
+}
+
+.recruit .detail6 .photoContainer {
+  background: url(../images/recruit/voice/detail6_bg_main_visual.jpg) no-repeat center top;
+}
+
+.recruit .detail7 .photoContainer {
+  background: url(../images/recruit/voice/detail7_bg_main_visual.jpg) no-repeat center top;
+}
+
+.recruit .detail8 .photoContainer {
+  background: url(../images/recruit/voice/detail8_bg_main_visual.jpg) no-repeat center top;
+}
+
+.recruit .mainVisualVoiceDetail {
+  height: 600px;
+}
+
+.recruit .mainVisualVoiceDetail .photoContainer {
+  height: 800px;
+  background-size: cover;
+}
+
+.recruit .headPhotoContainer {
+  position: relative;
+  max-width: 1400px;
+  width: 87.5%;
+  margin: auto auto 30px auto;
+}
+
+.recruit .headPhotoContainer .headPhotoContainerInner {
+  width: 100%;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-box;
+  display: -webkit-flexbox;
+  display: -moz-flexbox;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: flex;
+  -webkit-box-lines: multiple;
+  -moz-box-lines: multiple;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.recruit .headPhotoContainer .left {
+  width: 74.5%;
+  float: left;
+}
+
+.recruit .headPhotoContainer .left img {
+  width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+
+.recruit .headPhotoContainer .right {
+  width: 25.5%;
+  float: right;
+  background: #fff;
+  position: relative;
+}
+
+.recruit .headPhotoContainer .right .box {
+  padding: 20px 20px 30px 20px;
+  position: absolute;
+  bottom: 0;
+}
+
+.recruit .headPhotoContainer .right .box h2 {
+  color: #8D785A;
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+.recruit .headPhotoContainer .right .box .text {
+  line-height: 1.7;
+}
+
+.recruit .ourContentsArea {
+  background: none;
+  height: auto;
+}
+
+.recruit .ourContentsArea .boxContainer {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-box;
+  display: -webkit-flexbox;
+  display: -moz-flexbox;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: flex;
+  -webkit-box-lines: multiple;
+  -moz-box-lines: multiple;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.recruit .ourContentsArea .boxContainer .box .img {
+  background: #000;
+}
+
+.recruit .ourContentsArea .boxContainer .box .menu {
+  padding: 0;
+}
+
+.recruit .ourContentsArea .boxContainer .box .menu .menuInner {
+  position: static;
+}
+
+.recruit .ourContentsArea .boxContainer .box:hover .img img {
+  opacity: 0.7;
+}
+
+.recruit .ourContentsArea .boxContainer .entryForm {
+  background: #8D785A;
+  position: relative;
+}
+
+.recruit .ourContentsArea .boxContainer .entryForm:before {
+  display: block;
+  position: relative;
+  width: 100%;
+  padding-top: 126.33%;
+  content: "";
+}
+
+.recruit .ourContentsArea .boxContainer .entryForm .entryAreaInner {
+  padding: 40px;
+  position: absolute;
+  bottom: 0;
+}
+
+.recruit .ourContentsArea .boxContainer .entryForm .entryAreaInner .jp {
+  font-size: 1.4em;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.recruit .ourContentsArea .boxContainer .entryForm .entryAreaInner .eng {
+  font-size: 0.9em;
+  margin-bottom: 30px;
+}
+
+.recruit .ourContentsArea .boxContainer .entryForm .entryAreaInner .text {
+  font-size: 0.9em;
+  margin-bottom: 30px;
+}
+
+.recruit .ourContentsArea .boxContainer .entryForm .entryAreaInner .btnEntry {
+  text-align: center;
+}
+
+.recruit .ourContentsArea .boxContainer .entryForm .entryAreaInner .btnEntry a {
+  border: 1px solid #C6BBAC;
+  display: block;
+  font-size: 0.9em;
+  padding: 25px;
+  transition: 0.2s;
+}
+
+.recruit .ourContentsArea .boxContainer .entryForm .entryAreaInner .btnEntry a:hover {
+  background: #444;
+  border: 1px solid #444;
+  transition: 0.2s;
+}
+
+.recruit .ourContentsArea .boxContainer .entryForm p, .recruit .ourContentsArea .boxContainer .entryForm a {
+  color: #fff;
+}
+
+.recruit .meritFuture th {
+  width: 30%;
+  vertical-align: top;
+}
+
+.recruit .meritFuture td {
+  text-align: left;
+}
+
+.recruit .requirement h3 span {
+  padding-right: 0;
+}
+
+.recruit .requirement .tableType1 th, .recruit .requirement .tableType1 td {
+  font-size: 0.9em;
+  line-height: 2;
+}
+
+.recruit .requirement .tableType1 th {
+  text-align: left;
+  vertical-align: top;
+  padding: 12px 15px 12px 15px;
+}
+
+.recruit .requirement .tableType1 td {
+  text-align: left;
+}
+
+@media screen and (max-width: 1200px) {
+  .recruit .headPhotoContainer .right .box h2 {
+    font-size: 1.3em;
+    transition: 0.2s;
+  }
+  .recruit .headPhotoContainer .right .box .text {
+    font-size: 0.8em;
+    transition: 0.2s;
+  }
+  .recruit .ourContentsArea .boxContainer .entryForm .entryAreaInner {
+    padding: 30px;
+  }
+  .recruit .ourContentsArea .boxContainer .entryForm .entryAreaInner .jp {
+    font-size: 1.2em;
+  }
+  .recruit .ourContentsArea .boxContainer .entryForm .entryAreaInner .eng {
+    font-size: 0.8em;
+  }
+  .recruit .ourContentsArea .boxContainer .entryForm .entryAreaInner .text {
+    font-size: 0.8em;
+  }
+  .recruit .ourContentsArea .boxContainer .entryForm .entryAreaInner .btnEntry a {
+    font-size: 0.9em;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .recruit .mainVisualVoiceTop {
+    height: 400px;
+  }
+  .recruit .mainVisualVoiceTop .photoContainer {
+    height: 550px;
+  }
+  .recruit .headPhotoContainer .right .box h2 {
+    font-size: 1em;
+  }
+  .recruit .headPhotoContainer .right .box .text {
+    font-size: 0.7em;
+  }
+  .recruit .ourContentsArea .boxContainer .entryForm .entryAreaInner {
+    padding: 30px;
+  }
+  .recruit .ourContentsArea .boxContainer .entryForm .entryAreaInner .jp {
+    font-size: 1em;
+  }
+  .recruit .ourContentsArea .boxContainer .entryForm .entryAreaInner .eng {
+    font-size: 0.7em;
+  }
+  .recruit .ourContentsArea .boxContainer .entryForm .entryAreaInner .text {
+    font-size: 0.7em;
+  }
+  .recruit .ourContentsArea .boxContainer .entryForm .entryAreaInner .btnEntry a {
+    font-size: 0.8em;
+    padding: 15px;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .recruit .headPhotoContainer .right .box {
+    padding-bottom: 20px;
+  }
+  .recruit .headPhotoContainer .right .box h2 {
+    font-size: 1.2em;
+  }
+  .recruit .headPhotoContainer .right .box .text {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  .recruit .ourContentsArea {
+    margin-bottom: 30px;
+  }
+  .recruit .ourContentsArea .boxContainer {
+    margin-bottom: 0;
+  }
+  .recruit .ourContentsArea .boxContainer .box {
+    margin-bottom: 30px;
+  }
+  .recruit .ourContentsArea .boxContainer .entryForm .entryAreaInner {
+    position: static;
+    padding: 30px;
+  }
+  .recruit .ourContentsArea .boxContainer .entryForm .entryAreaInner .jp {
+    font-size: 1em;
+  }
+  .recruit .ourContentsArea .boxContainer .entryForm .entryAreaInner .eng {
+    font-size: 0.7em;
+  }
+  .recruit .ourContentsArea .boxContainer .entryForm .entryAreaInner .text {
+    font-size: 0.7em;
+  }
+  .recruit .ourContentsArea .boxContainer .entryForm .entryAreaInner .btnEntry a {
+    font-size: 0.8em;
+    padding: 15px;
+  }
+
+  .recruit .ourContentsArea .boxContainer .entryForm:before {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 820px) {
+  .recruit .mainVisualTop .textContainer .sub {
+    font-size: 1.5em;
+  }
+  .recruit .mainVisualTop .textContainer .title {
+    font-size: 3.5em;
+  }
+  .recruit .mainVisualTop .textContainer .text {
+    font-size: 0.75em;
+  }
+  .recruit .headPhotoContainer .right .box {
+    padding: 15px 15px 15px 15px;
+    /*.text {
+					font-size:0.75em;
+					transition:0.2s;
+				}*/
+  }
+  .recruit .headPhotoContainer .right .box h2 {
+    font-size: 1em;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .recruit .mainVisualArea .textContainer {
+    padding-top: 180px;
+  }
+  .recruit .mainVisualArea {
+    height: 300px;
+  }
+  .recruit .mainVisualArea .photoContainer {
+    height: 325px;
+  }
+  .recruit .mainVisualTop {
+    height: 325px;
+  }
+  .recruit .mainVisualTop .photoContainer {
+    height: 325px;
+  }
+  .recruit .mainVisualTop .photoContainer .photo {
+    height: 325px;
+  }
+  .recruit .mainVisualTop .textContainer {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    bottom: 28px;
+    color: #fff;
+  }
+  .recruit .mainVisualTop .textContainer .sub {
+    font-size: 0.7em;
+  }
+  .recruit .mainVisualTop .textContainer .title {
+    font-size: 1.4em;
+  }
+  .recruit .mainVisualTop .textContainer .text {
+    margin-bottom: 20px;
+    font-size: 0.75em;
+  }
+  .recruit .mainVisualTop .textContainer .btn {
+    width: 100px;
+  }
+  .recruit .mainVisualTop .textContainer .btn a {
+    padding: 6px 0 6px 0;
+    font-size: 0.75em;
+  }
+  .recruit .mainVisualVoiceTop {
+    height: 280px;
+  }
+  .recruit .mainVisualVoiceTop .photoContainer {
+    height: 300px;
+  }
+  .recruit .mainVisualVoiceDetail {
+    height: 350px;
+  }
+  .recruit .mainVisualVoiceDetail .photoContainer {
+    height: 350px;
+    margin-top: 80px;
+  }
+  .recruit .meritFuture th {
+    width: 30%;
+  }
+  .recruit .meritFuture td {
+    white-space: normal;
+  }
+  .recruit .requirement .tableType1 {
+    margin-bottom: 10px;
+  }
+  .recruit .requirement .tableType1 th, .recruit .requirement .tableType1 td {
+    font-size: 0.75em;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+  .recruit .requirement .tableType1 td {
+    white-space: normal;
+  }
+  .recruit .headPhotoContainer .headPhotoContainerInner {
+    -webkit-box-lines: single;
+    -moz-box-lines: single;
+    -webkit-flex-wrap: no-wrap;
+    -moz-flex-wrap: no-wrap;
+    -ms-flex-wrap: no-wrap;
+    flex-wrap: no-wrap;
+    display: block;
+  }
+  .recruit .headPhotoContainer .pc {
+    display: none;
+  }
+  .recruit .headPhotoContainer .left {
+    float: none;
+    width: 100%;
+  }
+  .recruit .headPhotoContainer .right {
+    float: none;
+    width: 100%;
+  }
+  .recruit .headPhotoContainer .right .box {
+    position: static;
+  }
+  .recruit .headPhotoContainer .right .box h2 {
+    margin-bottom: 5px;
+  }
+  .recruit .subTopArea .boxContainer .entry .boxInner .textContainer .title {
+    font-size: 0.75em;
+  }
+  .recruit .subTopArea .boxContainer .entry .boxInner .textContainer .sub {
+    display: none;
+  }
+}

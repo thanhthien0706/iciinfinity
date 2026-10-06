@@ -1,0 +1,73 @@
+/**************************************************
+ About Style
+**************************************************/
+.about {
+  /*************************
+	 Recruit Style (Top)
+	*************************/
+}
+
+.about .mainVisualAreaTop .photoContainer {
+  background: url(../images/products/p18.jpg) no-repeat center top;
+  background-size: cover;
+}
+
+.about .mainVisualAreaAdvantage .photoContainer {
+  background: url(../images/about/bg_main_visual_advantage.jpg) no-repeat center top;
+  background-size: cover;
+}
+
+.about .mainVisualAreaService .photoContainer {
+  background: url(../images/about/bg_main_visual_service.jpg) no-repeat center top;
+  background-size: cover;
+}
+
+.about .mainVisualAreaQuality .photoContainer {
+  background: url(../images/about/bg_main_visual_quality.jpg) no-repeat center top;
+  background-size: cover;
+}
+
+.about .mainVisualAreaPeople .photoContainer {
+  background: url(../images/about/bg_main_visual_people.jpg) no-repeat center top;
+  background-size: cover;
+}
+
+.about .mainVisualAreaFactory .photoContainer {
+  background: url(../images/about/bg_main_visual_factory.jpg) no-repeat center top;
+  background-size: cover;
+}
+
+.about .subTopArea .boxContainer .img0 {
+  background: url(../images/products/p19.jpg) center center;
+  background-size: cover;
+}
+
+.about .subTopArea .boxContainer .img1 {
+  background: url(../images/products/p20.jpg) center center;
+  background-size: cover;
+}
+
+.about .subTopArea .boxContainer .img2 {
+  background: url(../images/products/p21.jpg) center center;
+  background-size: cover;
+}
+
+.about .subTopArea .boxContainer .img3 {
+  background: url(../images/products/p22.jpg) center center;
+  background-size: cover;
+}
+
+.about .subTopArea .boxContainer .img4 {
+  background: url(../images/products/p23.jpg) center center;
+  background-size: cover;
+}
+
+.about .subTopArea .boxContainer .image {
+  background-size: cover;
+}
+
+
+.about .subTopArea .boxContainer .img5 {
+  background: url(../images/products/p24.jpg) center center;
+  background-size: cover;
+}

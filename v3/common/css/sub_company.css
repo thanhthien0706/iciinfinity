@@ -1,0 +1,75 @@
+/**************************************************
+ About Style
+**************************************************/
+.company {
+  /*************************
+	 Recruit Style (Top)
+	*************************/
+}
+
+.company .mainVisualAreaTop .photoContainer {
+  background: url(../images/products/p30.jpg) no-repeat center top;
+  background-size: cover;
+}
+
+.company .mainVisualAreaPhilosophy .photoContainer {
+  background: url(../images/company/bg_main_visual_philosophy.jpg) no-repeat center top;
+  background-size: cover;
+}
+
+.company .mainVisualAreaPlan .photoContainer {
+  background: url(../images/company/bg_main_visual_plan.jpg) no-repeat center top;
+  background-size: cover;
+}
+
+.company .mainVisualAreaHistory .photoContainer {
+  background: url(../images/company/bg_main_visual_history.jpg) no-repeat center top;
+  background-size: cover;
+}
+
+.company .mainVisualAreaOutline .photoContainer {
+  background: url(../images/company/bg_main_visual_outline.jpg) no-repeat center top;
+  background-size: cover;
+}
+
+.company .mainVisualAreaAccess .photoContainer {
+  background: url(../images/company/bg_main_visual_access.jpg) no-repeat center top;
+  background-size: cover;
+}
+
+.company .subTopArea .boxContainer .img0 {
+  background: url(../images/products/p31.jpg) center center;
+}
+
+.company .subTopArea .boxContainer .img1 {
+  background: url(../images/products/p32.jpg) center center;
+}
+
+.company .subTopArea .boxContainer .img2 {
+  background: url(../images/products/p33.jpg) center center;
+}
+
+.company .subTopArea .boxContainer .img3 {
+  background: url(../images/products/p34.jpg) center center;
+}
+
+.company .subTopArea .boxContainer .img4 {
+  background: url(../images/products/p35.jpg) center center;
+}
+
+.company .subTopArea .boxContainer .img5 {
+  background: url(../images/products/p36.jpg) center center;
+}
+
+
+.company .subTopArea .boxContainer .image {
+  background-size: cover;
+}
+
+.company .subInnerArea .subInnerAreaInner .tableType1 td {
+  text-align: left;
+}
+
+.company .subInnerArea .tableType1 td {
+  white-space: normal;
+}

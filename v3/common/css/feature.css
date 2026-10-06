@@ -1,0 +1,595 @@
+/**************************************************
+ Main Visual Area
+**************************************************/
+.mainVisualArea {
+  height: 450px;
+}
+
+.mainVisualArea .photoContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 700px;
+  background: url(../images/products/p09.jpg) no-repeat center top;
+  background-size: cover;
+}
+
+.mainVisualArea .textContainer {
+  position: relative;
+  text-align: center;
+  padding-top: 200px;
+  overflow: hidden;
+}
+
+.mainVisualArea .textContainer .title {
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #fff;
+  overflow: hidden;
+}
+
+.mainVisualArea .textContainer .sub {
+  font-size: 1em;
+  color: #8D785A;
+  margin-bottom: 10px;
+}
+
+.mainVisualArea .textContainer .text {
+  font-size: 1em;
+  color: #fff;
+}
+
+@media screen and (max-width: 640px) {
+  .mainVisualArea {
+    height: 225px;
+  }
+  .mainVisualArea .photoContainer {
+    height: 250px;
+  }
+  .mainVisualArea .textContainer {
+    padding-top: 70px;
+  }
+  .mainVisualArea .textContainer .title {
+    font-size: 1.2em;
+    margin-bottom: 2px;
+  }
+  .mainVisualArea .textContainer .sub {
+    font-size: 0.8em;
+    margin-bottom: 2px;
+  }
+  .mainVisualArea .textContainer .text {
+    font-size: 0.8em;
+  }
+}
+
+/**************************************************
+ Body Area
+**************************************************/
+.bodyArea {
+  position: relative;
+}
+
+.bodyArea .boxContainer {
+  margin: auto auto 80px auto;
+  width: 100%;
+  position: relative;
+}
+
+.bodyArea .boxContainer .boxContainerInner {
+  width: 87.5%;
+  max-width: 1400px;
+  margin: auto;
+  position: relative;
+  z-index: 100;
+}
+
+.bodyArea .boxContainer .titles {
+  position: absolute;
+}
+
+.bodyArea .boxContainer .titles h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.bodyArea .boxContainer .titles .eng {
+  color: #8D785A;
+  font-family: "Open Sans", "Noto Sans Japanese", Meiryo, MS PGothic, sans-serif;
+}
+
+.bodyArea .boxContainer .contents {
+  width: 66%;
+  background: #fff;
+}
+
+.bodyArea .boxContainer .contents .img img {
+  width: 100%;
+  height: 600px;
+}
+
+.bodyArea .boxContainer .contents .textContainer {
+  padding: 30px 10% 30px 10%;
+}
+
+.bodyArea .boxContainer .contents .textContainer h3 {
+  font-size: 1.3em;
+  color: #8D785A;
+  margin-bottom: 20px;
+  line-height: 1;
+}
+
+.bodyArea .boxContainer .contents .textContainer h3 span {
+  color: #ddd;
+  font-size: 2.3em;
+  padding-right: 20px;
+}
+
+.bodyArea .boxContainer .contents .textContainer p {
+  line-height: 2;
+  margin-bottom: 30px;
+}
+
+.bodyArea .body0 .titles {
+  top: 320px;
+}
+
+.bodyArea .body0 .contents {
+  margin: 0 0 0 auto;
+}
+
+.bodyArea .body1 {
+  margin-bottom: -210px;
+}
+
+.bodyArea .body1 .marginContainer {
+  width: auto;
+  position: relative;
+  margin-right: 6.285%;
+  transition: 0.3s;
+}
+
+.bodyArea .body1 .titles {
+  top: 30px;
+  right: -40px;
+}
+
+.bodyArea .body1 .titles h2 {
+  color: #fff;
+}
+
+.bodyArea .body1 .titles h2, .bodyArea .body1 .titles p {
+  position: relative;
+}
+
+.bodyArea .body1 .contents {
+  margin: 0 auto 0 0;
+}
+
+.bodyArea .body1 .bgBoxContainer {
+  position: relative;
+  max-width: 1600px;
+  width: 100%;
+  margin: auto;
+}
+
+.bodyArea .body1 .bgBoxContainer .bgBox {
+  position: absolute;
+  right: 0;
+  top: -260px;
+  width: 43.75%;
+  margin: auto 0 auto auto;
+  transition: 0.3s;
+}
+
+.bodyArea .body1 .bgBoxContainer .bgBox img {
+  width: 100%;
+  height: auto;
+}
+
+.bodyArea .body2 {
+  margin-bottom: -50px;
+}
+
+.bodyArea .body2 .bg {
+  position: absolute;
+  width: 100%;
+  height: 800px;
+  background: url(../images/products/p14.jpg) no-repeat center top;
+  background-size: cover;
+}
+
+.bodyArea .body2 .boxContainerInner {
+  padding-top: 290px;
+}
+
+.bodyArea .body2 .titles {
+  top: 387px;
+}
+
+.bodyArea .body2 .titles h2 {
+  color: #fff;
+}
+
+.bodyArea .body2 .contents {
+  margin: 0 0 0 auto;
+}
+
+.bodyArea .fadeObject {
+  opacity: 0;
+}
+
+@media screen and (max-width: 1500px) {
+  .bodyArea .body1 .marginContainer {
+    margin-right: 5.285%;
+    transition: 0.3s;
+  }
+  .bodyArea .body1 .bgBoxContainer .bgBox {
+    top: -230px;
+    transition: 0.3s;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .bodyArea .body1 .marginContainer {
+    margin-right: 4.285%;
+    transition: 0.3s;
+  }
+  .bodyArea .body1 .bgBoxContainer .bgBox {
+    top: -200px;
+    transition: 0.3s;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .bodyArea .body1 .marginContainer {
+    margin-right: 3.285%;
+    transition: 0.3s;
+  }
+  .bodyArea .body1 .bgBoxContainer .bgBox {
+    top: -180px;
+    transition: 0.3s;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .mainVisualArea .photoContainer {
+    height: 450px;
+  }
+  .bodyArea .boxContainer .titles {
+    position: static;
+    margin-bottom: 40px;
+  }
+  .bodyArea .boxContainer .titles h2 br {
+    display: none;
+  }
+  .bodyArea .boxContainer .contents {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+  .bodyArea .body0 .titles {
+    padding-top: 50px;
+  }
+  .bodyArea .body1 {
+    margin-bottom: -110px;
+  }
+  .bodyArea .body1 .bgBoxContainer .bgBox {
+    width: 100%;
+    height: 500px;
+    background: #222;
+    top: -220px;
+  }
+  .bodyArea .body1 .bgBoxContainer .bgBox img {
+    display: none;
+  }
+  .bodyArea .body2 {
+    margin-bottom: -50px;
+  }
+  .bodyArea .body2 .boxContainerInner {
+    padding-top: 150px;
+  }
+  .bodyArea .body2 .bg {
+    height: 500px;
+  }
+  .bodyArea .fadeObject {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .bodyArea .boxContainer .titles h2 {
+    font-size: 1.5em;
+  }
+  .bodyArea .boxContainer .contents .textContainer h3 {
+    font-size: 1em;
+  }
+  .bodyArea .boxContainer .contents .textContainer h3 span {
+    font-size: 1.8em;
+  }
+  .bodyArea .boxContainer .contents .textContainer p {
+    font-size: 0.8em;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .mainVisualArea {
+    height: 175px;
+  }
+  .mainVisualArea .photoContainer {
+    height: 175px;
+  }
+  .bodyArea .boxContainer {
+    margin: auto auto 20px auto;
+  }
+  .bodyArea .boxContainer .titles {
+    margin-bottom: 20px;
+  }
+  .bodyArea .boxContainer .titles h2 {
+    font-size: 1.1em;
+    margin-bottom: 5px;
+  }
+  .bodyArea .boxContainer .titles p {
+    font-size: 0.8em;
+  }
+  .bodyArea .boxContainer .contents .textContainer {
+    padding: 20px 7% 10px 7%;
+  }
+  .bodyArea .boxContainer .contents .textContainer h3 {
+    font-size: 0.95em;
+    margin-bottom: 10px;
+    line-height: 1.5;
+  }
+  .bodyArea .boxContainer .contents .textContainer h3 span {
+    font-size: 1.4em;
+    padding-right: 10px;
+  }
+  .bodyArea .boxContainer .contents .textContainer p {
+    font-size: 0.8em;
+  }
+  .bodyArea .body0 .titles {
+    padding-top: 20px;
+  }
+  .bodyArea .body1 {
+    margin-bottom: -30px;
+  }
+  .bodyArea .body1 .bgBoxContainer .bgBox {
+    top: -50px;
+    height: 250px;
+  }
+  .bodyArea .body2 {
+    margin-bottom: -20px;
+  }
+  .bodyArea .body2 .boxContainerInner {
+    padding-top: 50px;
+  }
+  .bodyArea .body2 .bg {
+    height: 250px;
+  }
+  .ourContentsArea .haderContainer {
+    padding-top: 40px;
+  }
+}
+
+/**************************************************
+ Contact Entry Area
+**************************************************/
+.formArea {
+  padding-top: 100px;
+}
+
+.contactEntryArea {
+  background: #8D785A;
+  max-width: 1400px;
+  width: 87.5%;
+  margin: auto auto 30px auto;
+  position: relative;
+  color: #fff;
+  margin-top: 100px;
+}
+
+.contactEntryArea a {
+  color: #fff;
+}
+
+.contactEntryArea .contactEntryAreaInner {
+  padding: 40px 80px 30px 70px;
+  width: auto;
+}
+
+.contactEntryArea .contactEntryAreaInner .floatContainer {
+  display: inline-block;
+  width: 100%;
+}
+
+.contactEntryArea .contactEntryAreaInner .left {
+  float: left;
+  width: 27.76%;
+}
+
+.contactEntryArea .contactEntryAreaInner .left .jp {
+  font-size: 1.8em;
+  font-weight: bold;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.contactEntryArea .contactEntryAreaInner .left .eng {
+  font-size: 0.9em;
+  font-family: "Open Sans", "Noto Sans Japanese", Meiryo, MS PGothic, sans-serif;
+}
+
+.contactEntryArea .contactEntryAreaInner .right {
+  float: left;
+  width: 72.24%;
+}
+
+.contactEntryArea .contactEntryAreaInner .right .box {
+  display: inline-block;
+  width: 100%;
+}
+
+.contactEntryArea .contactEntryAreaInner .right .box .left2 {
+  width: 71.2%;
+  float: left;
+  padding-top: 10px;
+}
+
+.contactEntryArea .contactEntryAreaInner .right .box .left2 .left3 {
+  float: left;
+  width: 32.348%;
+}
+
+.contactEntryArea .contactEntryAreaInner .right .box .left2 .left3 .title {
+  background: url(../images/common/icon_contact_area.gif) no-repeat left center;
+  padding-left: 15px;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.contactEntryArea .contactEntryAreaInner .right .box .left2 .right3 {
+  float: left;
+  width: 67.65%;
+}
+
+.contactEntryArea .contactEntryAreaInner .right .box .left2 .right3 .text {
+  font-size: 0.9em;
+}
+
+.contactEntryArea .contactEntryAreaInner .right .box .right2 {
+  width: 28.79%;
+  float: left;
+}
+
+.contactEntryArea .contactEntryAreaInner .right .box .right2 .btnForm {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.contactEntryArea .contactEntryAreaInner .right .box .right2 .btnForm a {
+  border: 1px solid #C6BBAC;
+  display: block;
+  font-size: 0.9em;
+  padding: 10px 20px 10px 20px;
+  transition: 0.2s;
+}
+
+.contactEntryArea .contactEntryAreaInner .right .box .right2 .btnForm a:hover {
+  background: #333;
+  border: 1px solid #333;
+  transition: 0.2s;
+}
+
+.contactEntryArea .contactEntryAreaInner .right .box .right2 .tel {
+  background: #78664D;
+  text-align: center;
+}
+
+.contactEntryArea .contactEntryAreaInner .right .box .right2 .tel span {
+  display: block;
+  padding: 10px 20px 10px 20px;
+  font-size: 1.2em;
+}
+
+@media screen and (max-width: 1550px) {
+  .contactEntryArea .contactEntryAreaInner .left {
+    float: none;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .contactEntryArea .contactEntryAreaInner .left .jp {
+    display: inline-block;
+  }
+  .contactEntryArea .contactEntryAreaInner .left .jp br {
+    display: none;
+  }
+  .contactEntryArea .contactEntryAreaInner .left .eng {
+    display: inline-block;
+    padding-left: 15px;
+  }
+  .contactEntryArea .contactEntryAreaInner .right {
+    float: none;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1170px) {
+  .contactEntryArea .contactEntryAreaInner {
+    padding: 40px 60px 30px 70px;
+  }
+  .contactEntryArea .contactEntryAreaInner .right .box .left2 {
+    padding-top: 0;
+  }
+  .contactEntryArea .contactEntryAreaInner .right .box .left2 .left3,
+  .contactEntryArea .contactEntryAreaInner .right .box .left2 .right3 {
+    float: none;
+    width: 100%;
+  }
+  .contactEntryArea .contactEntryAreaInner .right .box .left2 .right3 {
+    padding-left: 15px;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .contactEntryArea .contactEntryAreaInner {
+    padding: 40px 80px 30px 70px;
+    text-align: center;
+  }
+  .contactEntryArea .contactEntryAreaInner .right .box .left2,
+  .contactEntryArea .contactEntryAreaInner .right .box .right2 {
+    float: none;
+    width: 100%;
+  }
+  .contactEntryArea .contactEntryAreaInner .right .box .left2 {
+    margin-bottom: 10px;
+  }
+  .contactEntryArea .contactEntryAreaInner .right .box .left2 .left3 .title {
+    background: none;
+    padding-left: 0;
+  }
+  .contactEntryArea .contactEntryAreaInner .right .box .left2 .right3 {
+    padding-left: 0;
+  }
+  .contactEntryArea .contactEntryAreaInner .right .box .right2 {
+    margin-bottom: 20px;
+  }
+  .contactEntryArea .contactEntryAreaInner .right .box .right2 .btnForm,
+  .contactEntryArea .contactEntryAreaInner .right .box .right2 .tel {
+    width: 60%;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .contactEntryArea .contactEntryAreaInner {
+    padding: 30px 20px 20px 20px;
+  }
+  .contactEntryArea .contactEntryAreaInner .left {
+    margin-bottom: 20px;
+  }
+  .contactEntryArea .contactEntryAreaInner .left .jp {
+    font-size: 0.9em;
+    margin-bottom: 5px;
+  }
+  .contactEntryArea .contactEntryAreaInner .left .eng {
+    font-size: 0.6em;
+    display: block;
+  }
+  .contactEntryArea .contactEntryAreaInner .right .box .left2 .left3 .title {
+    font-size: 0.85em;
+  }
+  .contactEntryArea .contactEntryAreaInner .right .box .left2 .right3 .text {
+    font-size: 0.8em;
+  }
+  .contactEntryArea .contactEntryAreaInner .right .box .right2 {
+    margin-bottom: 20px;
+  }
+  .contactEntryArea .contactEntryAreaInner .right .box .right2 .btnForm,
+  .contactEntryArea .contactEntryAreaInner .right .box .right2 .tel {
+    width: 80%;
+    margin: auto;
+    font-size: 0.8em;
+  }
+}

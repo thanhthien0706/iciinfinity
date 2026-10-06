@@ -1,0 +1,283 @@
+/**************************************************
+ Global Navigation (override)
+**************************************************/
+.gnavi {
+  position: static;
+}
+
+.gnavi .gnaviInner {
+  max-width: 980px;
+}
+
+/**************************************************
+ Footer
+**************************************************/
+.footerS {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+
+.footerS .inner {
+  padding: 30px 0 30px 0;
+  background: #333;
+  width: 87.5%;
+  max-width: 980px;
+  margin: auto;
+  text-align: left;
+  position: relative;
+  display: inline-block;
+  color: #fff;
+  font-size: 0.6em;
+  font-family: Verdana, Geneva, sans-serif;
+}
+
+.footerS .inner .left {
+  width: 60%;
+  float: left;
+}
+
+.footerS .inner .left .left2 {
+  width: 150px;
+  float: left;
+  padding-left: 30px;
+}
+
+.footerS .inner .left .left2 .logo {
+  background: url(../images/common/logo_main.png) no-repeat;
+  width: 122px;
+  height: 32px;
+  text-indent: -9999px;
+}
+
+.footerS .inner .left .right2 {
+  float: left;
+  line-height: 1.8;
+}
+
+.footerS .inner .right {
+  width: 40%;
+  float: left;
+  text-align: right;
+}
+
+.footerS .inner .right p {
+  padding: 10px 30px 0 0;
+}
+
+.entryForm {
+  background: #fff;
+  width: 87.5%;
+  max-width: 980px;
+  margin: auto;
+}
+
+.entryForm .entryFormInner {
+  padding: 100px 120px 100px 120px;
+}
+
+.entryForm .entryFormInner h1 {
+  color: #8D785A;
+  font-size: 1.6em;
+  margin-bottom: 50px;
+}
+
+.entryForm .entryFormInner .text {
+  margin-bottom: 40px;
+  font-size: 1em;
+}
+
+.entryForm .entryFormInner .text a {
+  color: #8D785A;
+  text-decoration: underline;
+}
+
+.entryForm .entryFormInner hr {
+  border: 1px solid #e5e5d5;
+  border-width: 1px 0 0 0;
+  margin-bottom: 50px;
+}
+
+.entryForm .entryFormInner table {
+  width: 98%;
+  margin-bottom: 30px;
+}
+
+.entryForm .entryFormInner table th, .entryForm .entryFormInner table td {
+  font-weight: normal;
+  padding: 10px 10px 25px 0;
+  vertical-align: top;
+}
+
+.entryForm .entryFormInner table th {
+  width: 202px;
+}
+
+.entryForm .entryFormInner table .errorMsg {
+  display: none;
+  color: #d90000;
+}
+
+.entryForm .entryFormInner table .error textarea,
+.entryForm .entryFormInner table .error .inputText,
+.entryForm .entryFormInner table .error .inputSelect {
+  border: 1px solid #d90000;
+}
+
+.entryForm .entryFormInner table .error .errorMsg {
+  display: block;
+}
+
+.entryForm .entryFormInner .inputText {
+  border: 1px solid #e6e6e6;
+  padding: 10px;
+  width: 50%;
+  min-width: 200px;
+}
+
+.entryForm .entryFormInner .inputSelect {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: 1px solid #e6e6e6;
+  padding: 10px 30px 10px 10px;
+  background: url(../images/recruit/icon_select_arrow.gif) no-repeat right center;
+}
+
+.entryForm .entryFormInner select::-ms-expand {
+  display: none;
+}
+
+.entryForm .entryFormInner textarea {
+  width: 100%;
+  height: 300px;
+  outline: 0;
+  border: 1px solid #e6e6e6;
+}
+
+.entryForm .entryFormInner .btnContainer {
+  display: inline-block;
+  width: 100%;
+}
+
+.entryForm .entryFormInner .btnContainer .left {
+  float: left;
+  width: 120px;
+  padding-top: 6px;
+}
+
+.entryForm .entryFormInner .btnContainer .right {
+  float: left;
+  width: auto;
+}
+
+.entryForm .entryFormInner .btnBack,
+.entryForm .entryFormInner .btnFinish {
+  width: 100px;
+  text-align: center;
+}
+
+.entryForm .entryFormInner .btnBack a,
+.entryForm .entryFormInner .btnFinish a {
+  display: block;
+  padding: 10px 0 10px 0;
+  background: #ccc;
+  color: #333;
+  transition: 0.3s;
+}
+
+.entryForm .entryFormInner .btnBack a:hover,
+.entryForm .entryFormInner .btnFinish a:hover {
+  background: #333;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.entryForm .entryFormInner .btnFinish {
+  width: 300px;
+}
+
+.entryForm .entryFormInner .btnConfirm {
+  width: 300px;
+  text-align: center;
+}
+
+.entryForm .entryFormInner .btnConfirm a {
+  display: block;
+  padding: 13px 0 13px 0;
+  background: #8D785A;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.entryForm .entryFormInner .btnConfirm a:hover {
+  background: #333;
+  transition: 0.3s;
+}
+
+@media screen and (max-width: 950px) {
+  .entryForm .entryFormInner {
+    padding: 50px 60px 50px 60px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .gnavi .gnaviInner {
+    width: 100%;
+  }
+  .footerS .inner {
+    width: 100%;
+  }
+  .footerS .inner .left {
+    float: none;
+    width: 100%;
+  }
+  .footerS .inner .left .left2 {
+    float: none;
+    width: 100%;
+    text-align: center;
+    padding-left: 0;
+  }
+  .footerS .inner .left .left2 .logo {
+    background-size: 61px 16px;
+    width: 61px;
+    height: 16px;
+    margin: auto auto 15px auto;
+  }
+  .footerS .inner .left .right2 {
+    float: none;
+    text-align: center;
+    width: 100%;
+  }
+  .footerS .inner .left .right2 .address {
+    margin: auto;
+  }
+  .footerS .inner .right {
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+  .footerS .inner .right p {
+    padding: 10px 15px 0 15px;
+  }
+  .entryForm {
+    width: 100%;
+    font-size: 0.6em;
+  }
+  .entryForm .entryFormInner {
+    padding: 20px 20px 20px 20px;
+  }
+  .entryForm .entryFormInner h1 {
+    margin-bottom: 15px;
+  }
+  .entryForm .entryFormInner .text {
+    margin-bottom: 20px;
+  }
+  .entryForm .entryFormInner .inputText {
+    width: 90%;
+    min-width: inherit;
+  }
+  .entryForm .entryFormInner .btnConfirm {
+    width: 100%;
+  }
+}
