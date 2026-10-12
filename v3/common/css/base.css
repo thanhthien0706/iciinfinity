@@ -258,7 +258,7 @@ body .facit {
 
 .gnavi .gnaviInner .main {
   width: auto;
-  margin: auto auto auto 200px;
+  margin: auto 230px auto 200px;
 }
 
 .gnavi .gnaviInner .main li {
@@ -309,6 +309,38 @@ body .facit {
 
 .gnavi .gnaviInner .btnOpenClose {
   display: none;
+}
+
+.gnavi .gnaviInner .btnQuote {
+  position: absolute;
+  top: 34px;
+  right: 40px;
+}
+
+.gnavi .gnaviInner .btnQuote a {
+  display: block;
+  border: 1px solid #8D785A;
+  background: #8D785A;
+  color: #fff;
+  font-size: 0.8em;
+  padding: 10px 18px;
+  white-space: nowrap;
+  transition: 0.2s;
+}
+
+.gnavi .gnaviInner .btnQuote a:hover {
+  background: #000;
+  border: 1px solid #000;
+  transition: 0.2s;
+}
+
+.gnavi .min .btnQuote {
+  top: 15px;
+  transition: 0.2s;
+}
+
+.gnavi .min .btnQuote a {
+  padding: 6px 14px;
 }
 
 .gnavi .min {
@@ -371,6 +403,9 @@ body .facit {
   }
   .gnavi .gnaviInner .open {
     display: block;
+  }
+  .gnavi .gnaviInner .btnQuote {
+    display: none;
   }
   .gnavi .gnaviInner .btnOpenClose {
     /*background:url(../images/common/btn_open_gnavi.png) no-repeat;*/
@@ -740,6 +775,10 @@ body .facit {
   margin-top: 20px;
 }
 
+.footer .mobileContact {
+  display: none;
+}
+
 .footer .inner .right1,
 .footer .inner .right2,
 .footer .inner .right3 {
@@ -815,6 +854,20 @@ body .facit {
   .footer .inner .right2,
   .footer .inner .right3 {
     display: none;
+  }
+  .footer .mobileContact {
+    display: block;
+    margin: 20px auto 0 auto;
+    width: 80%;
+    max-width: 320px;
+  }
+  .footer .mobileContact a {
+    display: block;
+    background: #8D785A;
+    color: #fff;
+    padding: 14px 10px;
+    font-size: 0.95em;
+    font-weight: bold;
   }
 }
 
